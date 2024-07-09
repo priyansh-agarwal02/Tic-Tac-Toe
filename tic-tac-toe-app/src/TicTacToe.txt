@@ -1,0 +1,8 @@
+import React, { useState} from "react";
+import "./App.css"
+import Board from './components/Board';
+
+const TicTacToe = () => { 
+    const [turn,setTurn] = useState("X");
+    const winningCombos = [];
+}

@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #080808; /* Light grey background */
+  
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 80px; /* Reduced width */
+  height: 80px; /* Reduced height */
+  background: white;
+  border: 2px solid #000;
+  font-size: 40px; /* Larger font size */
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 50%; /* Circular squares */
+}
+
+.square.checked {
+  background-color: #00ff00; /* Green background for checked squares */
+}
+
+.square.x {
+  color: #000;
+}
+
+.square.o {
+  color: #000;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game-info {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 10px; /* Increased padding for button */
+  font-size: 30px; /* Larger font size */
+  cursor: pointer;
+  background-color: red;
+  color: rgb(9, 8, 8);
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: darkred;
+}
